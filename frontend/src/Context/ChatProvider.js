@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 const ChatContext=createContext();
 
 const ChatProvider=({children})=>{
+
+  const url="https://chatapp-backend-uhj7.onrender.com"
   const[user,setUser]=useState();
   const[selectedChat,setSelectedChat]=useState();
   const[chats,setChats]=useState([]);
